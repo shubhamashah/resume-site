@@ -6,64 +6,212 @@
   <title>Shubham Anilkumar Shah — Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fcfcfc;
+      --bg-gradient-start: #f4f8fc;
+      --bg-gradient-end: #edf4fa;
       --card-bg: #ffffff;
-      --text-main: #1e293b;
-      --text-muted: #64748b;
-      --accent: #0f172a;
+      --card-border: #dbeafe;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --primary-subtle: #f0f7ff;
+      --tag-bg: #eff6ff;
+      --tag-border: #bfdbfe;
+      --tag-text: #1e40af;
       --border: #e2e8f0;
-      --tag-bg: #f1f5f9;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+      --shadow-md: 0 4px 6px -1px rgba(2, 132, 199, 0.06), 0 2px 4px -2px rgba(2, 132, 199, 0.04);
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+      background-attachment: fixed;
       color: var(--text-main);
-      line-height: 1.6;
-      padding: 3rem 1.5rem;
+      line-height: 1.65;
+      padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 3vw, 2rem);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
+
     .container {
-      max-width: 720px;
+      max-width: 820px;
       margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: clamp(1.75rem, 5vw, 3.5rem);
     }
+
     header {
       border-bottom: 1px solid var(--border);
       padding-bottom: 2rem;
+      margin-bottom: 2.25rem;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+
+    .role {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      color: var(--primary-dark);
+      margin-top: 0.35rem;
+      font-weight: 500;
+    }
+
+    .links {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 0.75rem 1.25rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .links a, .links span {
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: color 0.15s ease-in-out;
+    }
+
+    .links a {
+      color: var(--primary);
+      border-bottom: 1px dashed var(--tag-border);
+    }
+
+    .links a:hover {
+      color: var(--primary-dark);
+      border-bottom-style: solid;
+    }
+
+    section {
       margin-bottom: 2.5rem;
     }
-    h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; color: var(--accent); }
-    .role { font-size: 1.1rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: 400; }
-    .links { margin-top: 1rem; display: flex; gap: 1rem; font-size: 0.9rem; flex-wrap: wrap; }
-    .links a, .links span { color: var(--text-muted); text-decoration: none; }
-    .links a { border-bottom: 1px dotted var(--text-muted); transition: color 0.2s; }
-    .links a:hover { color: var(--accent); }
-    section { margin-bottom: 2.5rem; }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
     h2 {
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 0.82rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--text-muted);
+      color: var(--primary-dark);
       margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
-    .item { margin-bottom: 1.75rem; }
-    .item-header { display: flex; justify-content: space-between; align-items: baseline; }
-    .item-title { font-weight: 600; font-size: 1rem; color: var(--accent); }
-    .item-date { font-size: 0.85rem; color: var(--text-muted); }
-    .item-sub { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-    .item-desc { font-size: 0.92rem; color: #334155; }
-    .item-desc li { margin-left: 1.2rem; margin-bottom: 0.35rem; }
-    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: var(--border);
+    }
+
+    .item {
+      margin-bottom: 1.75rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    @media (min-width: 580px) {
+      .item-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+
+    .item-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--primary-dark);
+      font-weight: 500;
+    }
+
+    .item-sub {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+    }
+
+    .item-desc {
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    .item-desc li {
+      margin-left: 1.25rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .item-desc li:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
     .skill-tag {
       background-color: var(--tag-bg);
-      border: 1px solid var(--border);
-      color: #334155;
-      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--tag-border);
+      color: var(--tag-text);
+      padding: 0.35rem 0.75rem;
       font-size: 0.85rem;
-      border-radius: 4px;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: background-color 0.15s ease;
+    }
+
+    .skill-tag:hover {
+      background-color: #dbeafe;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -71,35 +219,35 @@
   <div class="container">
     <header>
       <h1>Shubham Anilkumar Shah</h1>
-      <div class="role">Infrastructure & Data Center Operations Engineer</div>
+      <div class="role">Infrastructure &amp; Data Center Operations Engineer</div>
       <div class="links">
-        <span>PAN India (Open to Relocation)</span>
-        <a href="tel:+919429195720">+91 9429195720</a>
-        <a href="mailto:shubhamshah1985@gmail.com">shubhamshah1985@gmail.com</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>📍 PAN India (Open to Relocation)</span>
+        <a href="tel:+919429195720">📞 +91 9429195720</a>
+        <a href="mailto:shubhamshah1985@gmail.com">✉️ shubhamshah1985@gmail.com</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
       </div>
     </header>
 
     <section>
       <h2>Professional Summary</h2>
       <p class="item-desc">
-        Infrastructure & Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments. Experienced in hardware troubleshooting, rack & stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs. Strong foundation in data center operations with a focus on system reliability, operational excellence, and continuous learning.
+        Infrastructure &amp; Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments. Experienced in hardware troubleshooting, rack &amp; stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs. Strong foundation in data center operations with a focus on system reliability, operational excellence, and continuous learning.
       </p>
     </section>
 
     <section>
       <h2>Core Skills</h2>
       <div class="skills-grid">
-        <span class="skill-tag">Data Center & Infrastructure Operations</span>
-        <span class="skill-tag">Hardware Troubleshooting & Server Deployment</span>
-        <span class="skill-tag">Rack & Stack, Cabling & Physical Infrastructure</span>
-        <span class="skill-tag">Windows Server & Active Directory Fundamentals</span>
-        <span class="skill-tag">Windows & Linux Administration</span>
-        <span class="skill-tag">VMware Virtualization & High Availability</span>
+        <span class="skill-tag">Data Center &amp; Infrastructure Operations</span>
+        <span class="skill-tag">Hardware Troubleshooting &amp; Server Deployment</span>
+        <span class="skill-tag">Rack &amp; Stack, Cabling &amp; Physical Infrastructure</span>
+        <span class="skill-tag">Windows Server &amp; Active Directory Fundamentals</span>
+        <span class="skill-tag">Windows &amp; Linux Administration</span>
+        <span class="skill-tag">VMware Virtualization &amp; High Availability</span>
         <span class="skill-tag">Remote Management (iDRAC, ILO, IPMI)</span>
-        <span class="skill-tag">DNS, DHCP & TCP/IP Networking</span>
-        <span class="skill-tag">Incident Management, SLA & Ticketing</span>
-        <span class="skill-tag">Documentation & Cross-functional Coordination</span>
+        <span class="skill-tag">DNS, DHCP &amp; TCP/IP Networking</span>
+        <span class="skill-tag">Incident Management, SLA &amp; Ticketing</span>
+        <span class="skill-tag">Documentation &amp; Cross-functional Coordination</span>
       </div>
     </section>
 
@@ -113,7 +261,7 @@
         <div class="item-sub">Captec Americas Inc. • Canada</div>
         <ul class="item-desc">
           <li>Performed hardware diagnostics, system builds, and infrastructure deployment for enterprise server and IPC environments.</li>
-          <li>Installed and validated physical infrastructure, including rack & stack, cabling, and server hardware according to deployment procedures.</li>
+          <li>Installed and validated physical infrastructure, including rack &amp; stack, cabling, and server hardware according to deployment procedures.</li>
           <li>Diagnosed hardware, operating system, and basic network connectivity issues using structured troubleshooting methodologies.</li>
           <li>Supported incident response activities by investigating issues, documenting findings, escalating when required, and meeting SLA commitments.</li>
           <li>Utilized remote management tools including iDRAC, ILO, and IPMI for hardware diagnostics, health monitoring, and recovery tasks.</li>
@@ -145,7 +293,7 @@
     </section>
 
     <section>
-      <h2>Projects & Experience</h2>
+      <h2>Projects &amp; Experience</h2>
       <div class="item">
         <div class="item-header">
           <div class="item-title">Business Operations Platform | Teable AI</div>
@@ -187,7 +335,7 @@
       <h2>Education</h2>
       <div class="item">
         <div class="item-header">
-          <div class="item-title">Applied Network Infrastructure & System Administration</div>
+          <div class="item-title">Applied Network Infrastructure &amp; System Administration</div>
           <div class="item-date">Sep 2021 — Dec 2022</div>
         </div>
         <div class="item-sub">Conestoga College • Canada (Distinction)</div>
@@ -205,7 +353,7 @@
     </section>
 
     <section>
-      <h2>Technical Exposure & Training</h2>
+      <h2>Technical Exposure &amp; Training</h2>
       <ul class="item-desc">
         <li>CCNA Training (Internship-based) — The Maharaja Sayajirao University of Baroda (Dec 2019 – May 2020)</li>
         <li>Experience supporting enterprise infrastructure in SLA-driven operational environments.</li>
