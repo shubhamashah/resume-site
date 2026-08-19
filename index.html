@@ -176,7 +176,7 @@
     }
 
     /* =========================================================
-       1. DESKTOP SPECIFIC RULES (100% Screen Fill, Zero Dead Space)
+       1. DESKTOP SPECIFIC RULES (No Middle Gaps, True Full Fit)
        ========================================================= */
     @media (min-width: 1024px) {
       html, body {
@@ -196,48 +196,49 @@
         max-width: 99vw;
         height: 99vh;
         border-radius: 6px;
-        padding: 1.1rem 1.6rem;
+        padding: 0.9rem 1.4rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 0.55rem;
       }
 
       header {
         flex-direction: row;
-        gap: 2.25rem;
-        padding-bottom: 0.75rem;
+        gap: 2rem;
+        padding-bottom: 0.5rem;
       }
 
       .profile-photo {
-        width: 130px;
-        height: 130px;
+        width: 105px;
+        height: 105px;
       }
 
       .header-content h1 {
-        font-size: 2.35rem;
+        font-size: 2.1rem;
       }
 
       .header-content .role {
-        font-size: 1.25rem;
-        margin-top: 0.2rem;
+        font-size: 1.15rem;
+        margin-top: 0.15rem;
       }
 
       .header-links {
-        gap: 1.6rem;
-        font-size: 0.95rem;
-        margin-top: 0.45rem;
+        gap: 1.4rem;
+        font-size: 0.88rem;
+        margin-top: 0.35rem;
       }
 
       .summary-bar {
-        padding: 0.7rem 1.15rem;
-        font-size: 0.92rem;
-        line-height: 1.5;
+        padding: 0.5rem 0.9rem;
+        font-size: 0.88rem;
+        line-height: 1.4;
       }
 
       .main-grid {
         display: grid;
         grid-template-columns: 1.18fr 0.82fr;
-        gap: 2rem;
+        gap: 1.5rem;
         flex: 1;
         min-height: 0;
       }
@@ -245,32 +246,37 @@
       .col {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 0.75rem; /* Continuous flow without large artificial gaps */
         min-height: 0;
       }
 
-      h2 {
-        font-size: 0.86rem;
-        padding-bottom: 0.25rem;
-        margin-bottom: 0.45rem;
+      section {
+        display: flex;
+        flex-direction: column;
       }
 
-      .item { margin-bottom: 0.45rem; }
+      h2 {
+        font-size: 0.84rem;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .item { margin-bottom: 0.4rem; }
       .item:last-child { margin-bottom: 0; }
-      .item-title { font-size: 0.96rem; line-height: 1.3; }
-      .item-date { font-size: 0.82rem; }
-      .item-sub { font-size: 0.85rem; margin-bottom: 0.15rem; }
+      .item-title { font-size: 0.92rem; line-height: 1.25; }
+      .item-date { font-size: 0.8rem; }
+      .item-sub { font-size: 0.82rem; margin-bottom: 0.15rem; }
       
       ul.item-desc li {
-        padding-left: 1.1rem;
-        font-size: 0.88rem;
-        line-height: 1.45;
-        margin-bottom: 0.2rem;
+        padding-left: 1rem;
+        font-size: 0.85rem;
+        line-height: 1.38;
+        margin-bottom: 0.15rem;
       }
-      p.item-desc { font-size: 0.88rem; line-height: 1.45; }
+      p.item-desc { font-size: 0.85rem; line-height: 1.38; }
 
-      .skills-grid { gap: 0.45rem; }
-      .skill-tag { padding: 0.32rem 0.65rem; font-size: 0.82rem; }
+      .skills-grid { gap: 0.35rem; }
+      .skill-tag { padding: 0.25rem 0.55rem; font-size: 0.78rem; }
     }
 
     /* =========================================================
@@ -350,7 +356,7 @@
     </header>
 
     <div class="summary-bar">
-      <strong>Professional Summary:</strong> Infrastructure & Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments. Experienced in hardware troubleshooting, rack & stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs.
+      <strong>Professional Summary:</strong> Infrastructure & Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments[cite: 1]. Experienced in hardware troubleshooting, rack & stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs[cite: 1].
     </div>
 
     <div class="main-grid">
@@ -365,11 +371,11 @@
             </div>
             <div class="item-sub">Captec Americas Inc. • Canada</div>
             <ul class="item-desc">
-              <li>Performed hardware diagnostics, system builds, and infrastructure deployment for enterprise server and IPC environments.</li>
-              <li>Installed and validated physical infrastructure, including rack & stack, cabling, and server hardware per deployment procedures.</li>
-              <li>Diagnosed hardware, OS, and basic network connectivity issues using structured troubleshooting methodologies.</li>
-              <li>Supported incident response activities, documented findings, escalated when required, and met SLA commitments.</li>
-              <li>Utilized remote management tools (iDRAC, ILO, IPMI) for hardware diagnostics, health monitoring, and recovery.</li>
+              <li>Performed hardware diagnostics, system builds, and infrastructure deployment for enterprise server and IPC environments.[cite: 1]</li>
+              <li>Installed and validated physical infrastructure, including rack & stack, cabling, and server hardware per deployment procedures.[cite: 1]</li>
+              <li>Diagnosed hardware, OS, and basic network connectivity issues using structured troubleshooting methodologies.[cite: 1]</li>
+              <li>Supported incident response activities, documented findings, escalated when required, and met SLA commitments.[cite: 1]</li>
+              <li>Utilized remote management tools (iDRAC, ILO, IPMI) for hardware diagnostics, health monitoring, and recovery.[cite: 1]</li>
             </ul>
           </div>
 
@@ -379,7 +385,7 @@
               <div class="item-date">Oct 2021 — Aug 2024</div>
             </div>
             <div class="item-sub">RONA+ • Canada</div>
-            <p class="item-desc">Managed customer sales and order processing using internal systems, ensuring accurate fulfillment and efficient issue resolution.</p>
+            <p class="item-desc">Managed customer sales and order processing using internal systems, ensuring accurate fulfillment and efficient issue resolution.[cite: 1]</p>
           </div>
 
           <div class="item">
@@ -388,7 +394,7 @@
               <div class="item-date">Dec 2019 — May 2020</div>
             </div>
             <div class="item-sub">Indian Institute of Hardware Technology (IIHT) • India</div>
-            <p class="item-desc">Supported Windows and Linux systems, basic networking, user support, and infrastructure troubleshooting.</p>
+            <p class="item-desc">Supported Windows and Linux systems, basic networking, user support, and infrastructure troubleshooting.[cite: 1]</p>
           </div>
         </section>
 
@@ -400,7 +406,7 @@
               <div class="item-date">Mar 2026 — Present</div>
             </div>
             <div class="item-sub">Saffron Enterprise • India</div>
-            <p class="item-desc">Designed low-code platform digitizing CRM, Sales Orders, Purchase Orders, Inventory, Ledger, and real-time scheduling workflows.</p>
+            <p class="item-desc">Designed low-code platform digitizing CRM, Sales Orders, Purchase Orders, Inventory, Ledger, and real-time scheduling workflows.[cite: 1]</p>
           </div>
 
           <div class="item">
@@ -409,7 +415,7 @@
               <div class="item-date">Sep 2022 — Dec 2022</div>
             </div>
             <div class="item-sub">Conestoga College • Canada</div>
-            <p class="item-desc">Configured high-availability lab with VMware, Windows Server, AD, DNS, and SQL Server clustering to validate failover redundancy.</p>
+            <p class="item-desc">Configured high-availability lab with VMware, Windows Server, AD, DNS, and SQL Server clustering to validate failover redundancy.[cite: 1]</p>
           </div>
 
           <div class="item">
@@ -418,7 +424,7 @@
               <div class="item-date">Jun 2019 — Nov 2019</div>
             </div>
             <div class="item-sub">Vardhman Textorium • India</div>
-            <p class="item-desc">Developed a web-based business management system for inventory, billing, and order processing.</p>
+            <p class="item-desc">Developed a web-based business management system for inventory, billing, and order processing.[cite: 1]</p>
           </div>
         </section>
       </div>
@@ -463,12 +469,12 @@
         <section>
           <h2>Technical Exposure & Training</h2>
           <ul class="item-desc">
-            <li>CCNA Training (Internship-based, MSU Baroda)</li>
-            <li>Enterprise infrastructure support in SLA-driven environments</li>
-            <li>Windows Server, Active Directory, DNS, DHCP, VMware</li>
-            <li>ITIL-based incident, change, and escalation processes</li>
-            <li>Enterprise & hardware health monitoring tools</li>
-            <li>Foundational knowledge of AWS & Azure cloud platforms</li>
+            <li>CCNA Training (Internship-based, MSU Baroda)[cite: 1]</li>
+            <li>Enterprise infrastructure support in SLA-driven environments[cite: 1]</li>
+            <li>Windows Server, Active Directory, DNS, DHCP, VMware[cite: 1]</li>
+            <li>ITIL-based incident, change, and escalation processes[cite: 1]</li>
+            <li>Enterprise & hardware health monitoring tools[cite: 1]</li>
+            <li>Foundational knowledge of AWS & Azure cloud platforms[cite: 1]</li>
           </ul>
         </section>
       </div>
