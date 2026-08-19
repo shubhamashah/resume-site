@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fcfcfc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #0f172a;
+      --border: #e2e8f0;
+      --tag-bg: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; color: var(--accent); }
+    .role { font-size: 1.1rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: 400; }
+    .links { margin-top: 1rem; display: flex; gap: 1rem; font-size: 0.9rem; flex-wrap: wrap; }
+    .links a { color: var(--text-muted); text-decoration: none; border-bottom: 1px dotted var(--text-muted); transition: color 0.2s; }
+    .links a:hover { color: var(--accent); }
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .item { margin-bottom: 1.75rem; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .item-title { font-weight: 600; font-size: 1rem; color: var(--accent); }
+    .item-date { font-size: 0.85rem; color: var(--text-muted); }
+    .item-sub { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .item-desc { font-size: 0.92rem; color: #334155; }
+    .item-desc li { margin-left: 1.2rem; margin-bottom: 0.35rem; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      background-color: var(--tag-bg);
+      border: 1px solid var(--border);
+      color: #334155;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.85rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Full Name</h1>
+      <div class="role">Systems & Infrastructure Engineer</div>
+      <div class="links">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <a href="https://github.com/username" target="_blank">GitHub</a>
+        <a href="#">Location / City</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="item-desc">
+        Brief, 2–3 line summary highlighting your core expertise, hands-on strengths, and problem-solving focus.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Title / Role</div>
+          <div class="item-date">2024 — Present</div>
+        </div>
+        <div class="item-sub">Company Name • Location</div>
+        <ul class="item-desc">
+          <li>Key achievement or responsibility described with actionable outcomes.</li>
+          <li>Optimized performance and managed critical hardware/network systems.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Networking</span>
+        <span class="skill-tag">Linux / Server Administration</span>
+        <span class="skill-tag">Hardware Assembly</span>
+        <span class="skill-tag">Cloud Infrastructure</span>
+        <span class="skill-tag">Troubleshooting</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
