@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Resume</title>
+  <title>Shubham Anilkumar Shah — Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -37,7 +37,8 @@
     h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; color: var(--accent); }
     .role { font-size: 1.1rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: 400; }
     .links { margin-top: 1rem; display: flex; gap: 1rem; font-size: 0.9rem; flex-wrap: wrap; }
-    .links a { color: var(--text-muted); text-decoration: none; border-bottom: 1px dotted var(--text-muted); transition: color 0.2s; }
+    .links a, .links span { color: var(--text-muted); text-decoration: none; }
+    .links a { border-bottom: 1px dotted var(--text-muted); transition: color 0.2s; }
     .links a:hover { color: var(--accent); }
     section { margin-bottom: 2.5rem; }
     h2 {
@@ -69,47 +70,150 @@
 <body>
   <div class="container">
     <header>
-      <h1>Your Full Name</h1>
-      <div class="role">Systems & Infrastructure Engineer</div>
+      <h1>Shubham Anilkumar Shah</h1>
+      <div class="role">Infrastructure & Data Center Operations Engineer</div>
       <div class="links">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
-        <a href="https://github.com/username" target="_blank">GitHub</a>
-        <a href="#">Location / City</a>
+        <span>PAN India (Open to Relocation)</span>
+        <a href="tel:+919429195720">+91 9429195720</a>
+        <a href="mailto:shubhamshah1985@gmail.com">shubhamshah1985@gmail.com</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </header>
 
     <section>
-      <h2>Summary</h2>
+      <h2>Professional Summary</h2>
       <p class="item-desc">
-        Brief, 2–3 line summary highlighting your core expertise, hands-on strengths, and problem-solving focus.
+        Infrastructure & Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments. Experienced in hardware troubleshooting, rack & stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs. Strong foundation in data center operations with a focus on system reliability, operational excellence, and continuous learning.
       </p>
     </section>
 
     <section>
-      <h2>Experience</h2>
+      <h2>Core Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Data Center & Infrastructure Operations</span>
+        <span class="skill-tag">Hardware Troubleshooting & Server Deployment</span>
+        <span class="skill-tag">Rack & Stack, Cabling & Physical Infrastructure</span>
+        <span class="skill-tag">Windows Server & Active Directory Fundamentals</span>
+        <span class="skill-tag">Windows & Linux Administration</span>
+        <span class="skill-tag">VMware Virtualization & High Availability</span>
+        <span class="skill-tag">Remote Management (iDRAC, ILO, IPMI)</span>
+        <span class="skill-tag">DNS, DHCP & TCP/IP Networking</span>
+        <span class="skill-tag">Incident Management, SLA & Ticketing</span>
+        <span class="skill-tag">Documentation & Cross-functional Coordination</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
       <div class="item">
         <div class="item-header">
-          <div class="item-title">Title / Role</div>
-          <div class="item-date">2024 — Present</div>
+          <div class="item-title">Computer Technician</div>
+          <div class="item-date">Feb 2024 — Mar 2026</div>
         </div>
-        <div class="item-sub">Company Name • Location</div>
+        <div class="item-sub">Captec Americas Inc. • Canada</div>
         <ul class="item-desc">
-          <li>Key achievement or responsibility described with actionable outcomes.</li>
-          <li>Optimized performance and managed critical hardware/network systems.</li>
+          <li>Performed hardware diagnostics, system builds, and infrastructure deployment for enterprise server and IPC environments.</li>
+          <li>Installed and validated physical infrastructure, including rack & stack, cabling, and server hardware according to deployment procedures.</li>
+          <li>Diagnosed hardware, operating system, and basic network connectivity issues using structured troubleshooting methodologies.</li>
+          <li>Supported incident response activities by investigating issues, documenting findings, escalating when required, and meeting SLA commitments.</li>
+          <li>Utilized remote management tools including iDRAC, ILO, and IPMI for hardware diagnostics, health monitoring, and recovery tasks.</li>
+          <li>Coordinated with engineering teams, project teams, and vendors to ensure timely deployment and issue resolution.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Sales Specialist</div>
+          <div class="item-date">Oct 2021 — Aug 2024</div>
+        </div>
+        <div class="item-sub">RONA+ • Canada</div>
+        <ul class="item-desc">
+          <li>Managed customer sales and order processing using internal systems, ensuring accurate fulfillment and efficient issue resolution.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">IT Intern</div>
+          <div class="item-date">Dec 2019 — May 2020</div>
+        </div>
+        <div class="item-sub">Indian Institute of Hardware Technology (IIHT) • India</div>
+        <ul class="item-desc">
+          <li>Supported Windows and Linux systems, basic networking, user support, and infrastructure troubleshooting while gaining foundational exposure to enterprise IT environments.</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span class="skill-tag">Networking</span>
-        <span class="skill-tag">Linux / Server Administration</span>
-        <span class="skill-tag">Hardware Assembly</span>
-        <span class="skill-tag">Cloud Infrastructure</span>
-        <span class="skill-tag">Troubleshooting</span>
+      <h2>Projects & Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Business Operations Platform | Teable AI</div>
+          <div class="item-date">Mar 2026 — Present</div>
+        </div>
+        <div class="item-sub">Saffron Enterprise • India</div>
+        <ul class="item-desc">
+          <li>Designed and implemented a low-code business operations platform to digitize CRM and operational workflows.</li>
+          <li>Built relational data models and integrated operational modules for CRM, Sales Orders, Purchase Orders, Inventory, Ledger, and Scheduling.</li>
+          <li>Developed dashboards, reporting views, and structured data workflows to improve operational visibility and business process tracking.</li>
+          <li>Collaborated with stakeholders to gather requirements, translate business processes into scalable system workflows, and continuously enhance the platform.</li>
+        </ul>
       </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Capstone Project (High Availability Lab)</div>
+          <div class="item-date">Sep 2022 — Dec 2022</div>
+        </div>
+        <div class="item-sub">Conestoga College • Canada</div>
+        <ul class="item-desc">
+          <li>Designed and implemented a high-availability lab environment using VMware, Windows Server, Active Directory, DNS, and SQL Server clustering. Configured redundancy and validated failover scenarios to understand enterprise infrastructure availability concepts.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Point Of Sales for Enterprise (POSE)</div>
+          <div class="item-date">Jun 2019 — Nov 2019</div>
+        </div>
+        <div class="item-sub">Vardhman Textorium • India</div>
+        <ul class="item-desc">
+          <li>Developed a web-based business management system for inventory, billing, and order processing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Applied Network Infrastructure & System Administration</div>
+          <div class="item-date">Sep 2021 — Dec 2022</div>
+        </div>
+        <div class="item-sub">Conestoga College • Canada (Distinction)</div>
+        <p class="item-desc">Specialized coursework with hands-on lab experience in network infrastructure, system administration, virtualization, and high-availability environments.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Bachelor of Computer Applications</div>
+          <div class="item-date">Jun 2017 — Apr 2020</div>
+        </div>
+        <div class="item-sub">The Maharaja Sayajirao University of Baroda • India (Second Class)</div>
+        <p class="item-desc">Built strong fundamentals in computer systems, networking, databases, and software development.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Exposure & Training</h2>
+      <ul class="item-desc">
+        <li>CCNA Training (Internship-based) — The Maharaja Sayajirao University of Baroda (Dec 2019 – May 2020)</li>
+        <li>Experience supporting enterprise infrastructure in SLA-driven operational environments.</li>
+        <li>Academic and lab exposure to Windows Server, Active Directory, DNS, DHCP, and VMware.</li>
+        <li>Familiar with ITIL-based incident, change, and escalation processes.</li>
+        <li>Exposure to enterprise monitoring concepts and hardware health monitoring.</li>
+        <li>Foundational knowledge of AWS and Microsoft Azure cloud platforms.</li>
+      </ul>
     </section>
   </div>
 </body>
