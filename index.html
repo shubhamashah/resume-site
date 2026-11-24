@@ -6,8 +6,8 @@
   <title>Shubham Anilkumar Shah</title>
   
   <!-- SEO & Open Graph Meta Tags -->
-  <meta name="description" content="Official portfolio and resume of Shubham Anilkumar Shah — Infrastructure & Data Center Operations Engineer.">
-  <meta name="keywords" content="Shubham Anilkumar Shah, Shubham Shah, Infrastructure Engineer, Data Center Operations">
+  <meta name="description" content="Official portfolio and resume of Shubham Anilkumar Shah — IT infrastructure, systems and hardware professional with a postgraduate diploma in network infrastructure and system administration.">
+  <meta name="keywords" content="Shubham Anilkumar Shah, Shubham Shah, IT Infrastructure, Systems Administration, Hardware, Networking, Windows Server, Active Directory, VMware, Linux">
   <meta name="author" content="Shubham Anilkumar Shah">
   <link rel="canonical" href="https://sshah.in">
 
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sshah.in/">
   <meta property="og:title" content="Shubham Anilkumar Shah — Resume & Portfolio">
-  <meta property="og:description" content="Infrastructure & Data Center Operations Engineer. Experience in enterprise server deployments and hardware troubleshooting.">
+  <meta property="og:description" content="IT infrastructure, systems and hardware professional. Hands-on experience with enterprise servers, rack systems, remote management and Windows/Linux administration.">
   <meta property="og:image" content="https://sshah.in/SAS.PNG">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,6 +122,21 @@
       text-decoration: underline;
     }
 
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.55rem 1.2rem;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .resume-btn:hover { background: var(--primary-dark); }
+
     /* Summary Bar */
     .summary-bar {
       background-color: #f8fafc;
@@ -156,7 +171,6 @@
       flex-direction: column;
     }
 
-    /* More space before Title, Less after */
     h2 {
       font-size: 0.85rem;
       font-weight: 700;
@@ -242,6 +256,15 @@
       line-height: 1.55;
     }
 
+    .skill-group { margin-bottom: 1rem; }
+    .skill-group:last-child { margin-bottom: 0; }
+    .skill-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
     .skills-grid {
       display: flex;
       flex-wrap: wrap;
@@ -300,7 +323,7 @@
     @media print {
       body { background: white; padding: 0; }
       .container { border: none; box-shadow: none; padding: 0; max-width: 100%; }
-      .profile-photo { display: none; }
+      .profile-photo, .resume-btn { display: none; }
     }
   </style>
 </head>
@@ -310,18 +333,19 @@
       <img src="SAS.PNG" alt="Shubham Anilkumar Shah" class="profile-photo" onerror="this.style.display='none'">
       <div class="header-content">
         <h1>Shubham Anilkumar Shah</h1>
-        <div class="role">Infrastructure & Data Center Operations Engineer</div>
+        <div class="role">IT Infrastructure | Systems | Hardware | Networking</div>
         <div class="header-links">
-          <span>📍 PAN India (Open to Relocation)</span>
+          <span>📍 Vadodara, India (Open to Relocation)</span>
           <a href="tel:+919429195720">📞 +91 9429195720</a>
           <a href="mailto:shubham@sshah.in">✉️ shubham@sshah.in</a>
-          <a href="https://linkedin.com/in/shubhamanilkumarshah" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          <a href="https://www.linkedin.com/in/shubhamanilkumarshah" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
         </div>
+        <a class="resume-btn" href="Shubham_Shah_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
       </div>
     </header>
 
     <div class="summary-bar">
-      <strong>Professional Summary:</strong> Infrastructure & Data Center Operations Engineer with 2+ years of experience supporting enterprise hardware, server deployments, and infrastructure operations in SLA-driven environments. Experienced in hardware troubleshooting, rack & stack activities, incident management, and system diagnostics, with hands-on exposure to Windows Server, Active Directory, virtualization, and enterprise infrastructure labs.
+      <strong>Professional Summary:</strong> IT infrastructure professional with 2+ years of hands-on experience building, testing, deploying and troubleshooting enterprise servers, rack systems and industrial PCs in a quality-driven, SLA-conscious environment. Holds a Distinction-grade postgraduate diploma in Applied Network Infrastructure &amp; System Administration, with working knowledge of Windows Server, Active Directory, DNS, DHCP, VMware and Linux. Experienced in remote management (iDRAC, iLO, IPMI), structured fault diagnosis, incident handling and ITIL-based escalation, and runs a self-hosted Linux and Docker environment. <strong>Open to relocation; available to join immediately.</strong>
     </div>
 
     <div class="main-grid">
@@ -335,27 +359,31 @@
               <div class="item-date">Feb 2024 — Mar 2026</div>
             </div>
             <div class="item-sub">
-              <a href="https://www.captecamericas.com/" target="_blank" rel="noopener noreferrer">Captec Americas Inc. • Cambridge, Canada</a>
+              <a href="https://www.captecamericas.com/" target="_blank" rel="noopener noreferrer">Captec Americas Inc. • Cambridge, Canada</a> · Contract via Advotek Staffing (Feb 2024); full-time from Jul 2024
             </div>
             <ul class="item-desc">
-              <li>Performed hardware diagnostics, system builds, and infrastructure deployment for enterprise server and IPC environments.</li>
-              <li>Installed and validated physical infrastructure, including rack & stack, cabling, and server hardware per deployment procedures.</li>
-              <li>Diagnosed hardware, OS, and basic network connectivity issues using structured troubleshooting methodologies.</li>
-              <li>Supported incident response activities, documented findings, escalated when required, and met SLA commitments.</li>
-              <li>Utilized remote management tools (iDRAC, ILO, IPMI) for hardware diagnostics, health monitoring, and recovery.</li>
+              <li>Assembled, configured and tested industrial PCs (IPC), servers and rack systems to customer specifications, following detailed work instructions and quality standards.</li>
+              <li>Installed and validated physical infrastructure, including rack &amp; stack, cabling and server hardware, per deployment procedures.</li>
+              <li>Diagnosed hardware, OS and basic network faults using structured methods and test equipment (volt meters, power supply testers, PoE testers).</li>
+              <li>Performed BIOS configuration, optimization and troubleshooting to meet customer requirements.</li>
+              <li>Used iDRAC, iLO and IPMI for remote hardware diagnostics, health monitoring and recovery tasks.</li>
+              <li>Built cable assemblies (crimping) and performed high-standard soldering for system and sub-assembly work.</li>
+              <li>Ran functional and performance tests, documented results accurately, and followed ESD, safety and 7S practices.</li>
+              <li>Investigated incidents, escalated when required and met SLA commitments; coordinated with engineering teams, project teams and vendors.</li>
             </ul>
           </div>
 
           <div class="item">
             <div class="item-header">
-              <div class="item-title">Sales Specialist</div>
+              <div class="item-title">Sales Specialist, Millwork</div>
               <div class="item-date">Oct 2021 — Aug 2024</div>
             </div>
             <div class="item-sub">
-              <a href="https://www.rona.ca/" target="_blank" rel="noopener noreferrer">RONA+ • Waterloo, Canada</a>
+              <a href="https://www.rona.ca/" target="_blank" rel="noopener noreferrer">RONA+ • Waterloo, Canada</a> · Promoted from Temporary Sales Associate
             </div>
             <ul class="item-desc">
-              <li>Managed customer sales and order processing using internal systems, ensuring accurate fulfillment and efficient issue resolution.</li>
+              <li>Promoted in March 2023 to full-time Sales Specialist; advised customers and associates on products and project requirements.</li>
+              <li>Managed orders end to end using internal systems, coordinating special orders with vendors and resolving delays quickly.</li>
             </ul>
           </div>
 
@@ -368,13 +396,40 @@
               <a href="https://www.iihtcomputereducation.com/" target="_blank" rel="noopener noreferrer">Indian Institute of Hardware Technology (IIHT) • Vadodara, India</a>
             </div>
             <ul class="item-desc">
-              <li>Supported Windows and Linux systems, basic networking, user support, and infrastructure troubleshooting.</li>
+              <li>Supported Windows and Linux systems, basic networking and end-user support; assisted with infrastructure troubleshooting.</li>
             </ul>
           </div>
         </section>
 
         <section>
           <h2>Key Projects</h2>
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">Self-Hosted Home Server (sshah.in)</div>
+              <div class="item-date">Personal project</div>
+            </div>
+            <div class="item-sub">Ubuntu Server 24.04 LTS on a repurposed Dell Inspiron 15, administered headless over SSH</div>
+            <ul class="item-desc">
+              <li>Run Docker-based Nextcloud and Immich for file and photo storage, replacing paid subscriptions.</li>
+              <li>Configured a CUPS and SANE network print and scan server for Windows clients, and a MergerFS storage pool across internal and external drives.</li>
+              <li>Set up rclone backups from Google Drive to Nextcloud, secure remote access with Cloudflare Tunnel, and a Brevo SMTP relay for email.</li>
+              <li>Host this website on GitHub with Cloudflare; diagnosed and fixed systemd socket and mount persistence issues after reboots.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div class="item-title">High-Availability Infrastructure Lab (Capstone)</div>
+              <div class="item-date">Sep 2022 — Dec 2022</div>
+            </div>
+            <div class="item-sub">
+              <a href="https://www.conestogac.on.ca/" target="_blank" rel="noopener noreferrer">Conestoga College • Kitchener, Canada</a>
+            </div>
+            <ul class="item-desc">
+              <li>Designed and implemented a high-availability lab using VMware, Windows Server, Active Directory, DNS and SQL Server clustering; validated failover and redundancy.</li>
+            </ul>
+          </div>
+
           <div class="item">
             <div class="item-header">
               <div class="item-title">Business Operations Platform | Teable AI</div>
@@ -384,20 +439,7 @@
               <a href="https://www.saffronenterprise.in/" target="_blank" rel="noopener noreferrer">Saffron Enterprise • Kolkata, India</a>
             </div>
             <ul class="item-desc">
-              <li>Designed low-code platform digitizing CRM, Sales Orders, Purchase Orders, Inventory, Ledger, and real-time scheduling workflows.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <div class="item-title">High Availability Lab (Capstone Project)</div>
-              <div class="item-date">Sep 2022 — Dec 2022</div>
-            </div>
-            <div class="item-sub">
-              <a href="https://www.conestogac.on.ca/" target="_blank" rel="noopener noreferrer">Conestoga College • Kitchener, Canada</a>
-            </div>
-            <ul class="item-desc">
-              <li>Configured high-availability lab with VMware, Windows Server, AD, DNS, and SQL Server clustering to validate failover redundancy.</li>
+              <li>Designed a low-code platform digitizing CRM, sales and purchase orders, inventory, ledger, scheduling and transport workflows, with dashboards and reporting.</li>
             </ul>
           </div>
 
@@ -407,30 +449,69 @@
               <div class="item-date">Jun 2019 — Nov 2019</div>
             </div>
             <div class="item-sub">
-              <a href="https://www.instagram.com/vardhmanethnicstudio?igsh=MWI5a3lkZTBmMXF0Nw==&utm_source=qr" target="_blank" rel="noopener noreferrer">Vardhman Textorium • Vadodara, India</a>
+              <a href="https://www.instagram.com/vardhmanethnicstudio?igsh=MWI5a3lkZTBmMXF0Nw==&utm_source=qr" target="_blank" rel="noopener noreferrer">Vardhman Ethnic Studio • Vadodara, India</a>
             </div>
             <ul class="item-desc">
-              <li>Developed a web-based business management system for inventory, billing, and order processing.</li>
+              <li>Developed a web-based business management system for inventory, billing and order processing.</li>
             </ul>
           </div>
         </section>
       </div>
 
-      <!-- Right Column: Skills, Education, Exposure -->
+      <!-- Right Column: Skills, Education -->
       <div class="col">
         <section>
           <h2>Core Skills</h2>
-          <div class="skills-grid">
-            <span class="skill-tag">Data Center Operations</span>
-            <span class="skill-tag">Hardware Troubleshooting</span>
-            <span class="skill-tag">Rack & Stack / Cabling</span>
-            <span class="skill-tag">Windows Server & AD</span>
-            <span class="skill-tag">Linux Administration</span>
-            <span class="skill-tag">VMware & High Availability</span>
-            <span class="skill-tag">Remote Mgmt (iDRAC, ILO, IPMI)</span>
-            <span class="skill-tag">DNS, DHCP & TCP/IP</span>
-            <span class="skill-tag">Incident & SLA Management</span>
-            <span class="skill-tag">System Documentation</span>
+          <div class="skill-group">
+            <div class="skill-label">Hardware &amp; Data Center</div>
+            <div class="skills-grid">
+              <span class="skill-tag">Server &amp; IPC Assembly</span>
+              <span class="skill-tag">Rack &amp; Stack</span>
+              <span class="skill-tag">Structured Cabling</span>
+              <span class="skill-tag">Hardware Diagnostics</span>
+              <span class="skill-tag">BIOS Configuration</span>
+              <span class="skill-tag">ESD Safety</span>
+              <span class="skill-tag">Soldering &amp; Crimping</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Remote Management &amp; Monitoring</div>
+            <div class="skills-grid">
+              <span class="skill-tag">iDRAC</span>
+              <span class="skill-tag">iLO</span>
+              <span class="skill-tag">IPMI</span>
+              <span class="skill-tag">Hardware Health Monitoring</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Systems &amp; Services</div>
+            <div class="skills-grid">
+              <span class="skill-tag">Windows Server</span>
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">DNS &amp; DHCP</span>
+              <span class="skill-tag">Linux (Ubuntu Server)</span>
+              <span class="skill-tag">VMware &amp; High Availability</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS &amp; Azure (Foundational)</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Networking</div>
+            <div class="skills-grid">
+              <span class="skill-tag">TCP/IP</span>
+              <span class="skill-tag">LAN/WAN Fundamentals</span>
+              <span class="skill-tag">CCNA-level Knowledge</span>
+              <span class="skill-tag">Cloudflare Tunnel</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Service Management</div>
+            <div class="skills-grid">
+              <span class="skill-tag">Incident Management</span>
+              <span class="skill-tag">SLA &amp; Ticketing</span>
+              <span class="skill-tag">ITIL Processes</span>
+              <span class="skill-tag">Technical Documentation</span>
+            </div>
           </div>
         </section>
 
@@ -438,12 +519,13 @@
           <h2>Education</h2>
           <div class="item">
             <div class="item-header">
-              <div class="item-title">Applied Network Infrastructure & System Admin</div>
+              <div class="item-title">Postgraduate Diploma, Applied Network Infrastructure &amp; System Administration</div>
               <div class="item-date">2021 — 2022</div>
             </div>
             <div class="item-sub">
               <a href="https://www.conestogac.on.ca/" target="_blank" rel="noopener noreferrer">Conestoga College • Kitchener, Canada (Distinction)</a>
             </div>
+            <p class="item-desc">Hands-on labs in network infrastructure, Windows Server and Active Directory, DNS and DHCP, VMware virtualization and high-availability environments.</p>
           </div>
 
           <div class="item">
@@ -452,21 +534,10 @@
               <div class="item-date">2017 — 2020</div>
             </div>
             <div class="item-sub">
-              <a href="https://msubaroda.ac.in/" target="_blank" rel="noopener noreferrer">The MSU Baroda • Vadodara, India (Second Class)</a>
+              <a href="https://msubaroda.ac.in/" target="_blank" rel="noopener noreferrer">The MSU Baroda • Vadodara, India</a>
             </div>
+            <p class="item-desc">Computer systems, networking, databases and software development. CCNA training (internship-based).</p>
           </div>
-        </section>
-
-        <section>
-          <h2>Technical Exposure & Training</h2>
-          <ul class="item-desc">
-            <li>CCNA Training (Internship-based, MSU Baroda)</li>
-            <li>Enterprise infrastructure support in SLA-driven environments</li>
-            <li>Windows Server, Active Directory, DNS, DHCP, VMware</li>
-            <li>ITIL-based incident, change, and escalation processes</li>
-            <li>Enterprise & hardware health monitoring tools</li>
-            <li>Foundational knowledge of AWS & Azure cloud platforms</li>
-          </ul>
         </section>
       </div>
     </div>
